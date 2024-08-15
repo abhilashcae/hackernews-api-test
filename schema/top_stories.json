@@ -1,0 +1,8 @@
+{
+  "type": "array",
+  "minLength": 1,
+  "maxItems": 500,
+  "items": {
+    "type": "integer"
+  }
+}

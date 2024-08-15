@@ -1,0 +1,188 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id"
+    ],
+    "properties": {
+        "by": {
+            "type": "string",
+            "default": "",
+            "title": "The by Schema",
+            "examples": [
+                "everybodyknows"
+            ]
+        },
+        "descendants": {
+            "type": "integer",
+            "default": 0,
+            "title": "The descendants Schema",
+            "examples": [
+                4
+            ]
+        },
+        "id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The id Schema",
+            "examples": [
+                41230039
+            ]
+        },
+        "kids": {
+            "type": "array",
+            "default": [],
+            "title": "The kids Schema",
+            "items": {
+                "type": "integer",
+                "title": "A Schema",
+                "examples": [
+                    41230124,
+                    41230105,
+                    41230104,
+                    41230145,
+                    41230121
+                ]
+            },
+            "examples": [
+                [41230124,
+                    41230105,
+                    41230104,
+                    41230145,
+                    41230121
+                ]
+            ]
+        },
+        "score": {
+            "type": "integer",
+            "default": 0,
+            "title": "The score Schema",
+            "examples": [
+                9
+            ]
+        },
+        "time": {
+            "type": "integer",
+            "default": 0,
+            "title": "The time Schema",
+            "examples": [
+                1723501420
+            ]
+        },
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "Why brutalist buildings should stay, even if people think they're ugly"
+            ]
+        },
+        "type": {
+            "type": "string",
+            "default": "",
+            "enum": ["job", "story", "comment", "poll", "pollopt"],
+            "title": "The type Schema",
+            "examples": [
+                "story"
+            ]
+        },
+        "url": {
+            "type": "string",
+            "default": "",
+            "title": "The url Schema",
+            "examples": [
+                "https://text.npr.org/g-s1-6417"
+            ]
+        },
+        "deleted": {
+            "type": "boolean",
+            "default": false,
+            "title": "The deleted Schema",
+            "examples": [
+                false
+            ]
+        },
+        "text": {
+            "type": "string",
+            "default": "",
+            "title": "The text Schema",
+            "examples": [
+                "example"
+            ]
+        },
+        "dead": {
+            "type": "boolean",
+            "default": false,
+            "title": "The dead Schema",
+            "examples": [
+                false
+            ]
+        },
+        "parent": {
+            "type": "integer",
+            "default": 0,
+            "title": "The parent Schema",
+            "examples": [
+                41230107
+            ]
+        },
+        "poll": {
+            "type": "integer",
+            "default": 0,
+            "title": "The poll Schema",
+            "examples": [
+                41230108
+            ]
+        },
+        "parts": {
+            "type": "array",
+            "default": [],
+            "title": "The parts Schema",
+            "items": {
+                "type": "integer",
+                "title": "A Schema",
+                "examples": [
+                    126810,
+                    126811,
+                    126812
+                ]
+            },
+            "examples": [
+                [126810,
+                    126811,
+                    126812
+                ]
+            ]
+        }
+    },
+    "examples": [{
+        "by": "everybodyknows",
+        "descendants": 4,
+        "id": 41230039,
+        "kids": [
+            41230124,
+            41230105,
+            41230104,
+            41230145,
+            41230121
+        ],
+        "score": 9,
+        "time": 1723501420,
+        "title": "Why brutalist buildings should stay, even if people think they're ugly",
+        "type": "story",
+        "url": "https://text.npr.org/g-s1-6417",
+        "deleted": false,
+        "text": "example",
+        "dead": false,
+        "parent": 41230107,
+        "poll": 41230108,
+        "parts": [
+            126810,
+            126811,
+            126812
+        ]
+    }]
+}
